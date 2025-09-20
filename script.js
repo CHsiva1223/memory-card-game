@@ -26,9 +26,7 @@ function createBoard() {
 
 // Flip card
 function flipCard() {
-    if (this.classList.contains("flipped") || this.classList.contains("matched")) {
-        return;
-    }
+    if (this.classList.contains("flipped") || this.classList.contains("matched")) return;
 
     this.textContent = this.dataset.emoji;
     this.classList.add("flipped");
@@ -78,3 +76,4 @@ function restartGame() {
 
 // Start game
 createBoard();
+
