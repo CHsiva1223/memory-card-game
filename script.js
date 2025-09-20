@@ -36,7 +36,7 @@ function flipCard() {
 
     if (flippedCards.length === 2) {
         moves++;
-        statusText.textContent = Moves: $ { moves };
+        statusText.textContent = `Moves: ${moves}`;
         checkMatch();
     }
 }
@@ -53,8 +53,7 @@ function checkMatch() {
 
         if (matchedCards === cards.length) {
             setTimeout(() => {
-                alert(🎉You won in $ { moves }
-                    moves!);
+                alert(`🎉 You won in ${moves} moves!`);
             }, 300);
         }
     } else {
